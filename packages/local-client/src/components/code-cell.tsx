@@ -18,7 +18,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
   const bundle = useTypeSelector((state) => state.bundles[cell.id]);
   const cumulativeCode = useCumulativeCode(cell.id);
 
-  console.log(cumulativeCode);
+  // console.log(cumulativeCode);
   useEffect(() => {
     if (!bundle) {
       createBundle(cell.id, cumulativeCode);
